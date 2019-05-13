@@ -1,7 +1,7 @@
 Articles_Sorted,Views
-Candidate is jerk, alleges rival,338647
-Bears love berries, alleges bear,253801
-Bad things gone, say good people,170098
+"Candidate is jerk, alleges rival",338647
+"Bears love berries, alleges bear",253801
+"Bad things gone, say good people",170098
 
 Authors_Sorted,Views
 Ursula La Multa,507594
