@@ -20,4 +20,5 @@ The ```python3 jb-log-analysis.py``` imports the psycopg2 module to connect to t
 1. In terminal run ```vagrant up```
 2. ```cd /vagrant```
 3. ```git clone https://github.com/jbacon24/log-analysis.git``` log-analysis repo
-4. Run ```python3 jb-log-analysis.py```
+4. ```cd log-analysis```
+4. Run ```python3 jb_logs_analysis.py```
