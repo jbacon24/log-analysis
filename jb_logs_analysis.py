@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 import psycopg2
+import csv
 
 conn = psycopg2.connect("dbname=news")
 pgcur = conn.cursor()
