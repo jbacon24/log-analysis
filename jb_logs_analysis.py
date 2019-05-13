@@ -16,7 +16,7 @@ sql_articles = """
     limit 3;"""
 pgcur.execute(sql_articles)
 article_results = pgcur.fetchall()
-header = ("Articles_Sorted")
+header = ("Articles_Sorted, Views")
 
 sql_authors = """
     select
@@ -35,7 +35,7 @@ sql_authors = """
     order by 2 desc;"""
 pgcur.execute(sql_authors)
 authors_results = pgcur.fetchall()
-header2 = ("Authors_Sorted")
+header2 = ("Authors_Sorted, Views")
 
 sql_loaderrors = """
     select
@@ -50,7 +50,7 @@ sql_loaderrors = """
         where ((error::decimal/total::decimal)*100) > 1.00;"""
 pgcur.execute(sql_loaderrors)
 loaderrors_results = pgcur.fetchall()
-header3 = ("Date")
+header3 = ("Date, Percent")
 
 with open('results.txt', 'w') as f:
     writer = csv.writer(f, delimiter=',')
