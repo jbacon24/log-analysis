@@ -11,7 +11,6 @@ Three questions to answer:
 * VirtualBox
 * Vagrant
 * Python3
-* Psycopg2
 
 ### Structure
 The ```python3 jb-log-analysis.py``` imports the psycopg2 module to connect to the postgres database. Three separate queries extract the data from the articles, authours, and log tables in the news database. The script then prints the results of those queries to a text file named **results.txt**. The results of the queries are in the order of the questions.
@@ -20,7 +19,7 @@ The ```python3 jb-log-analysis.py``` imports the psycopg2 module to connect to t
 In terminal run the following commands:
 1. ```vagrant up```
 2. ```vagrant ssh```
-2. ```cd /vagrant```
-3. ```git clone https://github.com/jbacon24/log-analysis.git``` log-analysis repo
-4. ```cd log-analysis```
-4. Run ```python3 jb_logs_analysis.py```
+3. ```cd /vagrant```
+4. ```git clone https://github.com/jbacon24/log-analysis.git```
+5. ```cd log-analysis```
+6. ```python3 jb_logs_analysis.py```
